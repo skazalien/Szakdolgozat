@@ -41,9 +41,6 @@ class Home extends Component {
       infos: [],
     };
   }
-  handleSendRequest_RFID() {
-    Alert.alert('Yeet', 'asd');
-  }
   handleOpenButton(rfid_id, arduino_id) {
     {
       let formData = new FormData();
@@ -70,7 +67,7 @@ class Home extends Component {
           return;
         }
         response.json().then(res => {
-          Alert.alert('yees', 'yeet');
+          Alert.alert('Door', 'opened');
         });
       });
     }
