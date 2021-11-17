@@ -274,7 +274,7 @@ class ImagesView extends Component {
             )
             .map((item, index) => {
               const imgUrl =
-                configjson.base_url + '/arduino_postman/uploads/' +
+                configjson.base_url + 'arduino_postman/uploads/' +
                 item.img_name;
               return (
                 <TouchableOpacity
